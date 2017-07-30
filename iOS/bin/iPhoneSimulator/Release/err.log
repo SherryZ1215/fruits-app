@@ -1,0 +1,78 @@
+objc[4824]: Class VCWeakObjectHolder is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/PrivateFrameworks/GameKitServices.framework/Frameworks/ViceroyTrace.framework/ViceroyTrace (0x11a7e7ca8) and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/PrivateFrameworks/GameKitServices.framework/Frameworks/AVConference.framework/AVConference (0x11a719cd0). One of the two will be used. Which one is undefined.
+objc[4824]: Class PLBuildVersion is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/PrivateFrameworks/AssetsLibraryServices.framework/AssetsLibraryServices (0x11846ccc0) and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/PrivateFrameworks/PhotoLibraryServices.framework/PhotoLibraryServices (0x1182836f0). One of the two will be used. Which one is undefined.
+2017-07-28 19:07:20.864 Tabs.iOS[4824:246773] Xamarin.iOS: Unable to locate assembly 'Microsoft.WindowsAzure.Mobile.Ext' (culture: '')
+2017-07-28 19:07:20.864 Tabs.iOS[4824:246773] Xamarin.iOS: Unable to locate assembly 'Microsoft.WindowsAzure.Mobile.Ext' (culture: '')
+2017-07-28 19:07:20.874 Tabs.iOS[4824:246773] 
+Unhandled Exception:
+System.InvalidOperationException: A Microsoft Azure Mobile Services assembly for the current platform was not found. Ensure that the current project references both Microsoft.WindowsAzure.Mobile and the following platform-specific assembly: Microsoft.WindowsAzure.Mobile.Ext.
+  at Microsoft.WindowsAzure.MobileServices.Platform.ThrowForMissingPlatformAssembly () [0x00045] in <42e24ce875d34485ad11c4f8aebb904a>:0 
+  at Microsoft.WindowsAzure.MobileServices.Platform.get_Instance () [0x00062] in <42e24ce875d34485ad11c4f8aebb904a>:0 
+  at Microsoft.WindowsAzure.MobileServices.MobileServiceClient.GetApplicationInstallationId () [0x00004] in <42e24ce875d34485ad11c4f8aebb904a>:0 
+  at Microsoft.WindowsAzure.MobileServices.MobileServiceClient..ctor (System.Uri mobileAppUri, System.Net.Http.HttpMessageHandler[] handlers) [0x0005f] in <42e24ce875d34485ad11c4f8aebb904a>:0 
+  at Microsoft.WindowsAzure.MobileServices.MobileServiceClient..ctor (System.String mobileAppUri, System.Net.Http.HttpMessageHandler[] handlers) [0x00008] in <42e24ce875d34485ad11c4f8aebb904a>:0 
+  at Tabs.AzureManager..ctor () [0x00006] in <b9d4ab9c91a94386a7ee5390ae5edae9>:0 
+  at Tabs.AzureManager.get_AzureManagerInstance () [0x00007] in <b9d4ab9c91a94386a7ee5390ae5edae9>:0 
+  at Tabs.AzureTable+<Handle_ClickedAsync>d__1.MoveNext () [0x00011] in <b9d4ab9c91a94386a7ee5390ae5edae9>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <2f4074c3120b4d80802e10af84b67d41>:0 
+  at System.Runtime.CompilerServices.AsyncMethodBuilderCore+<>c.<ThrowAsync>b__6_0 (System.Object state) [0x00000] in <2f4074c3120b4d80802e10af84b67d41>:0 
+  at UIKit.UIKitSynchronizationContext+<Post>c__AnonStorey0.<>m__0 () [0x00000] in <58a9bd8a3cbb4d0092bc0a767ff66c0f>:0 
+  at Foundation.NSAsyncActionDispatcher.Apply () [0x00000] in <58a9bd8a3cbb4d0092bc0a767ff66c0f>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at (wrapper managed-to-native) UIKit.UIApplication:UIApplicationMain (int,string[],intptr,intptr)
+  at UIKit.UIApplication.Main (System.String[] args, System.IntPtr principal, System.IntPtr delegate) [0x00005] in <58a9bd8a3cbb4d0092bc0a767ff66c0f>:0 
+  at UIKit.UIApplication.Main (System.String[] args, System.String principalClassName, System.String delegateClassName) [0x00038] in <58a9bd8a3cbb4d0092bc0a767ff66c0f>:0 
+  at Tabs.iOS.Application.Main (System.String[] args) [0x00000] in <06fb21432f60491eaa222500ab983c5d>:0 
+2017-07-28 19:07:20.876 Tabs.iOS[4824:246773] Unhandled managed exception:
+A Microsoft Azure Mobile Services assembly for the current platform was not found. Ensure that the current project references both Microsoft.WindowsAzure.Mobile and the following platform-specific assembly: Microsoft.WindowsAzure.Mobile.Ext. (System.InvalidOperationException)
+  at Microsoft.WindowsAzure.MobileServices.Platform.ThrowForMissingPlatformAssembly () [0x00045] in <42e24ce875d34485ad11c4f8aebb904a>:0 
+  at Microsoft.WindowsAzure.MobileServices.Platform.get_Instance () [0x00062] in <42e24ce875d34485ad11c4f8aebb904a>:0 
+  at Microsoft.WindowsAzure.MobileServices.MobileServiceClient.GetApplicationInstallationId () [0x00004] in <42e24ce875d34485ad11c4f8aebb904a>:0 
+  at Microsoft.WindowsAzure.MobileServices.MobileServiceClient..ctor (System.Uri mobileAppUri, System.Net.Http.HttpMessageHandler[] handlers) [0x0005f] in <42e24ce875d34485ad11c4f8aebb904a>:0 
+  at Microsoft.WindowsAzure.MobileServices.MobileServiceClient..ctor (System.String mobileAppUri, System.Net.Http.HttpMessageHandler[] handlers) [0x00008] in <42e24ce875d34485ad11c4f8aebb904a>:0 
+  at Tabs.AzureManager..ctor () [0x00006] in <b9d4ab9c91a94386a7ee5390ae5edae9>:0 
+  at Tabs.AzureManager.get_AzureManagerInstance () [0x00007] in <b9d4ab9c91a94386a7ee5390ae5edae9>:0 
+  at Tabs.AzureTable+<Handle_ClickedAsync>d__1.MoveNext () [0x00011] in <b9d4ab9c91a94386a7ee5390ae5edae9>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <2f4074c3120b4d80802e10af84b67d41>:0 
+  at System.Runtime.CompilerServices.AsyncMethodBuilderCore+<>c.<ThrowAsync>b__6_0 (System.Object state) [0x00000] in <2f4074c3120b4d80802e10af84b67d41>:0 
+  at UIKit.UIKitSynchronizationContext+<Post>c__AnonStorey0.<>m__0 () [0x00000] in <58a9bd8a3cbb4d0092bc0a767ff66c0f>:0 
+  at Foundation.NSAsyncActionDispatcher.Apply () [0x00000] in <58a9bd8a3cbb4d0092bc0a767ff66c0f>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at (wrapper managed-to-native) UIKit.UIApplication:UIApplicationMain (int,string[],intptr,intptr)
+  at UIKit.UIApplication.Main (System.String[] args, System.IntPtr principal, System.IntPtr delegate) [0x00005] in <58a9bd8a3cbb4d0092bc0a767ff66c0f>:0 
+  at UIKit.UIApplication.Main (System.String[] args, System.String principalClassName, System.String delegateClassName) [0x00038] in <58a9bd8a3cbb4d0092bc0a767ff66c0f>:0 
+  at Tabs.iOS.Application.Main (System.String[] args) [0x00000] in <06fb21432f60491eaa222500ab983c5d>:0 
+2017-07-28 19:07:20.876 Tabs.iOS[4824:246773] critical: Stacktrace:
+
+2017-07-28 19:07:20.876 Tabs.iOS[4824:246773] critical: 
+Native stacktrace:
+
+2017-07-28 19:07:20.913 Tabs.iOS[4824:246773] critical: 	0   Tabs.iOS                            0x00000001015e0c11 mono_handle_native_crash + 257
+2017-07-28 19:07:20.913 Tabs.iOS[4824:246773] critical: 	1   libsystem_platform.dylib            0x000000010e3e6b3a _sigtramp + 26
+2017-07-28 19:07:20.913 Tabs.iOS[4824:246773] critical: 	2   ???                                 0x0000000101aee0e0 0x0 + 4323205344
+2017-07-28 19:07:20.913 Tabs.iOS[4824:246773] critical: 	3   libsystem_c.dylib                   0x000000010e15588f abort + 127
+2017-07-28 19:07:20.913 Tabs.iOS[4824:246773] critical: 	4   Tabs.iOS                            0x0000000101777ab2 xamarin_unhandled_exception_handler + 34
+2017-07-28 19:07:20.914 Tabs.iOS[4824:246773] critical: 	5   Tabs.iOS                            0x0000000101640ef4 mono_invoke_unhandled_exception_hook + 148
+2017-07-28 19:07:20.914 Tabs.iOS[4824:246773] critical: 	6   Tabs.iOS                            0x00000001015e0971 mono_handle_exception_internal + 4913
+2017-07-28 19:07:20.914 Tabs.iOS[4824:246773] critical: 	7   Tabs.iOS                            0x00000001015df638 mono_handle_exception + 24
+2017-07-28 19:07:20.914 Tabs.iOS[4824:246773] critical: 	8   Tabs.iOS                            0x000000010156353f mono_amd64_throw_exception + 143
+2017-07-28 19:07:20.914 Tabs.iOS[4824:246773] critical: 	9   ???                                 0x00000001201f4ae7 0x0 + 4833888999
+2017-07-28 19:07:20.914 Tabs.iOS[4824:246773] critical: 	10  Tabs.iOS                            0x00000001014be90c _ZL31native_to_managed_trampoline_10P11objc_objectP13objc_selectorPP11_MonoMethodj + 284
+2017-07-28 19:07:20.915 Tabs.iOS[4824:246773] critical: 	11  Tabs.iOS                            0x00000001014c5b44 -[__MonoMac_NSAsyncActionDispatcher xamarinApplySelector] + 52
+2017-07-28 19:07:20.915 Tabs.iOS[4824:246773] critical: 	12  Foundation                          0x000000010490afd1 __NSThreadPerformPerform + 334
+2017-07-28 19:07:20.915 Tabs.iOS[4824:246773] critical: 	13  CoreFoundation                      0x000000010cb8cc01 __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 17
+2017-07-28 19:07:20.915 Tabs.iOS[4824:246773] critical: 	14  CoreFoundation                      0x000000010cb72058 __CFRunLoopDoSources0 + 408
+2017-07-28 19:07:20.915 Tabs.iOS[4824:246773] critical: 	15  CoreFoundation                      0x000000010cb715ff __CFRunLoopRun + 911
+2017-07-28 19:07:20.915 Tabs.iOS[4824:246773] critical: 	16  CoreFoundation                      0x000000010cb71016 CFRunLoopRunSpecific + 406
+2017-07-28 19:07:20.915 Tabs.iOS[4824:246773] critical: 	17  GraphicsServices                    0x000000010d924a24 GSEventRunModal + 62
+2017-07-28 19:07:20.916 Tabs.iOS[4824:246773] critical: 	18  UIKit                               0x0000000102c27134 UIApplicationMain + 159
+2017-07-28 19:07:20.916 Tabs.iOS[4824:246773] critical: 	19  ???                                 0x0000000122568585 0x0 + 4871062917
+2017-07-28 19:07:20.916 Tabs.iOS[4824:246773] critical: 	20  ???                                 0x00000001225683f0 0x0 + 4871062512
+2017-07-28 19:07:20.916 Tabs.iOS[4824:246773] critical: 
+=================================================================
+Got a SIGABRT while executing native code. This usually indicates
+a fatal error in the mono runtime or one of the native libraries 
+used by your application.
+=================================================================
+

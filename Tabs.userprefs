@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{60F7466D-91BF-487F-B9D4-60DC2C6DF110}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/Tabs.Droid.csproj">
+    <Files>
+      <File FileName="Tabs/CustomVision.xaml.cs" Line="164" Column="4" />
+      <File FileName="Droid/Tabs.Droid.csproj" Line="11" Column="31" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Tabs.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7155F3AF-D415-481D-8270-2CEE48E71125" />
+  <MonoDevelop.Ide.ItemProperties.Tabs.UITests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Tabs.Droid PreferredExecutionTarget="Android.AVY9KA95B1607572" />
+</Properties>
