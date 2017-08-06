@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Microsoft.WindowsAzure.MobileServices;
 using Newtonsoft.Json;
 namespace Tabs
@@ -13,5 +13,15 @@ namespace Tabs
 
 		    [JsonProperty(PropertyName = "Latitude")]
 		    public float Latitude { get; set; }
+
+		    [JsonProperty(PropertyName = "Time")]
+		    public DateTime Time { get; set; }
+
+		    [JsonProperty(PropertyName = "City")]
+		    public string City { get; set; }
+
+		    [JsonProperty(PropertyName = "Probability")]
+		    public string Probability { get; set; }
+
     }
 }
