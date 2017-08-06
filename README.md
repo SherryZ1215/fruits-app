@@ -10,4 +10,4 @@ get the location info and post it to Azure EasyTable
 
 access to the EasyTable and show it in the app
 
-changed: post time info to EasyTable, convert longitude & latitude info to the name of the city
+changed: post time info and the probability to EasyTable and show them in the app, change the layout of AzureTable page
