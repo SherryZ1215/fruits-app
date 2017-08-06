@@ -1,4 +1,4 @@
-﻿using Plugin.Media;
+using Plugin.Media;
 using System;
 using System.Diagnostics.Contracts;
 using System.IO;
@@ -12,6 +12,7 @@ using Tabs.Model;
 using Xamarin.Forms;
 using Plugin.Geolocator;
 using Newtonsoft.Json.Linq;
+using Xamarin.Forms.Maps;
 
 namespace Tabs
 {
@@ -48,9 +49,10 @@ namespace Tabs
 			});
 
 
-            await postLocationAsync();
+
 
 			await MakePredictionRequest(file);
+
 
 
 			
@@ -78,28 +80,15 @@ namespace Tabs
             });
 
 
-            await postLocationAsync();
-
             await MakePredictionRequest(file);
+
+
         }
 
-		async Task postLocationAsync()
-		{
+		
 
-			var locator = CrossGeolocator.Current;
-			locator.DesiredAccuracy = 50;
 
-			var position = await locator.GetPositionAsync(10000);
 
-			FruitsModel model = new FruitsModel()
-			{
-				Longitude = (float)position.Longitude,
-				Latitude = (float)position.Latitude
-
-			};
-
-			await AzureManager.AzureManagerInstance.PostFruitsInformation(model);
-		}
 
 
 
@@ -154,6 +143,24 @@ namespace Tabs
                     {
 
                         TagLabel.Text = "Don't know what it is!";
+                    }
+
+                    foreach (var prob in Probability)
+                    {
+		    	var locator = CrossGeolocator.Current;
+			locator.DesiredAccuracy = 50;
+			
+			var position = await locator.GetPositionAsync(10000);
+
+                        FruitsModel model = new FruitsModel()
+                        {
+                            Probability = prob,
+			    Longitude = (float)position.Longitude,
+			    Latitude = (float)position.Latitude,
+                            Time = DateTime.UtcNow.ToLocalTime()
+                        };
+
+                        await AzureManager.AzureManagerInstance.PostFruitsInformation(model);
                     }
 
                     //Get rid of file once we have finished using it
