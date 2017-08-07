@@ -10,6 +10,6 @@ get the location info and post it to Azure EasyTable
 
 access to the EasyTable and show it in the app
 
-CHANGED: post time info and the probability to EasyTable and show them in the app (inside the CustomVision.xaml.cs page),
+[CHANGED: post time info and the probability to EasyTable and show them in the app (inside the CustomVision.xaml.cs page),
 
-small changes of the layout of the AzureTable xaml page
+and some small changes of the layout of the AzureTable xaml page]
